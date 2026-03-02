@@ -1,0 +1,11 @@
+name: Call test1 Reusable Workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-reusable-workflow:
+    uses: quentinadam/test1/.github/workflows/reusable-echo-datetime.yml@main
